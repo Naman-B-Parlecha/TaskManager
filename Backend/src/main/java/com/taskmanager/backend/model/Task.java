@@ -1,5 +1,21 @@
 package com.taskmanager.backend.model;
 
-public class Task {
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name="tasks")
+public class Task {
+    @jakarta.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String tname;
+    private boolean tstatus;
 }
