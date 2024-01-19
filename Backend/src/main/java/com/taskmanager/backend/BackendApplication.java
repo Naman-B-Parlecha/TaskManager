@@ -19,9 +19,10 @@ public class BackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Task task=new Task();
-		task.setTname("Complete HW");
-		task.setTstatus(false);
-		taskRepository.save(task);
+//		Task task=new Task();
+//		task.setTname("Complete HW");
+//		task.setTstatus(false);
+//		taskRepository.save(task);
+//		taskRepository.deleteAll();
 	}
 }
